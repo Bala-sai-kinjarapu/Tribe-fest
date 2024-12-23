@@ -7,11 +7,12 @@ body{
     text-align: center;
     background-color: rgba(131, 81, 142, 0.245);
     height: 60px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding-left: 80%;
-    padding-right: 10%;
+    justify-content: end;
+    /* padding-left: 80%; 
+    padding-right: 10%; */
     margin-top: 10px;
     position: fixed;
 }
@@ -19,7 +20,7 @@ body{
     text-decoration: none;
     padding-top: 20px;
     color: white;
-    margin: 4px 10px 3px 10px;
+    margin: 4px 20px 3px 10px;
 }
 .logo{
     background-color: white;
@@ -32,7 +33,7 @@ body{
 }
 .up{
     display: flex;
-    position: absolute;
+    position: absolute; 
     right: 0;
     top: 12%;
     width: 100px;
@@ -66,7 +67,7 @@ body{
 .content h5{
     color: white;
     font-size: 25px;
-    line-height: 10px;
+    line-height: 25px;
     padding-left: 6%;
     
 }
@@ -80,6 +81,7 @@ body{
     width: 20%;
     border-radius: 20px;
     box-shadow: 10px 10px 10px 20px rgb(124, 6, 164);
+    
 }
 .speakers{
     display: flex;
