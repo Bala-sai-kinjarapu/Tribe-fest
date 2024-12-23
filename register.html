@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .heading{
+            width: 100vw;
+            height: 70px;
+            background-color: white;
+        }
+        .logo{
+    background-color:rgb(38, 3, 57);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+        .register{
+            width: 60%;
+            
+            margin-left: 20%;
+        }
+        .personal{
+            width: 40%;
+            margin-left: 5%;
+            margin-top: 5%;
+            height: 433px;
+        }
+        .Box{
+            width: 250px;
+            height: 25px;
+        }
+        .personal label,input{
+            margin-left: 45px;
+        }
+        .educational{
+            width: 25%;
+            margin-top: 9.7%;
+            position: absolute;
+            top: 0px;
+            left: 51%;
+            height:300px;
+        }
+        .educational input,select{
+            width: 250px;
+            height: 25px;
+            margin-left: 45px;
+        }
+        .educational label{
+            margin-left: 45px;
+        }
+        .contact{
+            width: 25%;
+            position: absolute;
+            top: 64.5%;
+            left: 51%;
+        }
+        .Event{
+            width: 87.5%;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .eventeliment{
+            margin-left: 120px;
+        }
+        #no{
+            margin: 1px;
+        }
+        #yes{
+            margin: 1px;
+        }
+        body{
+            color: rgb(212, 125, 11);
+            background-color: rgb(38, 3, 57);
+        }
+        .next{
+            color:white ;
+            background-color: rgba(15, 157, 178, 0.767);
+           width: 180px;
+           height: 50px;
+           margin-left: 75%;
+           border-radius: 10px;
+        }
+        .next:hover{
+            width: 160px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: rgba(15, 156, 178, 0.514);
+        }
+        .back{
+            background-color:  rgb(38, 3, 57);
+            color: white;
+            margin-top: 8px;
+            margin-left: 85%;
+            width: 180px;
+           height: 50px;
+           border-radius: 10px;
+        }
+        .back:hover{
+            width: 160px;
+            height: 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+    <div class="logo" style="text-align: center; color: white;">logo</div>
+    <a href="index.html"><button class="back"><b>Back</b></button></a>
+</div>
+    <fieldset class="register">
+        <legend><strong>Register</strong></legend>
+        <fieldset class="personal"><br>
+            <legend>Personal Info:</legend>
+            <label for="firstname">First Name:</label><br>
+            <input type="text" class="Box" id="firstname" placeholder="First Name"><br><br>
+            <label for="secondname">Last Name:</label><br>
+            <input type="text" class="Box" id="secondname" placeholder="Last Name"><br><br>
+            <h4 style="margin-left: 45px;line-height: 3px;">Gender:</h4>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Male">
+            <label for="Fe-Male">Fe-Male</label>
+            <input type="radio" name="gender" id="Fe-Male">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other"><br><br>
+            <label for="DOB">Date Of Birth:</label><br>
+            <input type="date" name="" id="DOB" class="Box"><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" class="Box" placeholder="Age">
+            </fieldset>
+
+            <!-- educational info -->
+
+            <fieldset class="educational">
+                <legend><strong>Educational Info:</strong></legend>
+                <label for="collage">Collage:</label><br>
+                <select name="" id="collage">
+                    <option value=" "> </option>
+                    <option value="">JNTUGV</option>
+                    <option value="">JNTUK</option>
+                    <option value="">Andhra University</option>
+                    <option value="">Srivenkateswara University</option>
+                    <option value="">AITAM Tekkali</option>
+                    <option value="">Other</option>
+                </select>
+                <h6 style="line-height: 0px; text-align: center; font-family: initial; color: rgb(248, 46, 5);">If other enter your collage name below.</h6>
+                <label for="coll">Enter your collage name:</label><br>
+                <input type="text" id="coll"><br><br>
+                <label for="course">Course:</label><br>
+                <input type="text" id="course"><br><br>
+                <label for="year">Year of study:</label><br>
+                <select name="" id="year">
+                    <option value=" "> </option>
+                    <option value="1st">1st year</option>
+                    <option value="2nd">2nd year</option>
+                    <option value="3rd">3rd year</option>
+                    <option value="4th">4th year</option>
+                    <option value="5th">5th year</option>
+                </select>
+            </fieldset>
+            <fieldset class="contact">
+                <legend><strong>Contact Info</strong></legend>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" style="width: 250px;height: 25px;"><br>
+                <label for="phone">Phone:</label><br>
+                <input type="number" id="phone" style="width: 250px;height: 25px;">
+            </fieldset>
+            <fieldset class="Event">
+                <legend><strong>Event specific Info:(Optional)</strong></legend>
+                <label for="" class="eventeliment">Do you want to perform in this event?</label><br><br>
+                <label for="yes" class="eventeliment">Yes</label>
+                <input type="radio" name="perform" id="yes" class="eventeliment">
+                <label for="no" class="eventeliment">No</label>
+                <input type="radio" name="perform" id="no" class="eventeliment"><br><br>
+                <label for="text" class="eventeliment">How do you think this event would be</label><br>
+                <textarea name="" id="text" class="eventeliment" rows="5" cols="50" placeholder="Your answer"></textarea>
+            </fieldset><br><br>
+            <input type="checkbox" id="agree">
+            <label for="agree">I Agree the <a href="#" style="color: white;">Terms&conditions</a> of the organisation.</label><br><br>
+            <button class="next"><b>Register</b></button>
+    </fieldset>
+</body>
+</html>

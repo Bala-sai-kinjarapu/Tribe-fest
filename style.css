@@ -1,0 +1,197 @@
+body{
+    margin: 0;
+    background-color: rgb(38, 3, 57);
+    
+}
+.nav-bar{
+    text-align: center;
+    background-color: rgba(131, 81, 142, 0.245);
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 80%;
+    padding-right: 10%;
+    margin-top: 10px;
+    position: fixed;
+}
+.navi{
+    text-decoration: none;
+    padding-top: 20px;
+    color: white;
+    margin: 4px 10px 3px 10px;
+}
+.logo{
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 10px;
+    left: 20px;
+}
+.up{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 12%;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    color:white;
+    background-color:rgb(163, 17, 212);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.heading{
+    padding-top: 3.5%;
+}
+.heading h1{
+    text-align:center;
+    color: white;
+    font-size: 60px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+.content1{
+    width: 50%;
+    border: 2px solid white;
+    margin-left: 60px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 20px rgb(124, 6, 164);
+}
+.content h5{
+    color: white;
+    font-size: 25px;
+    line-height: 10px;
+    padding-left: 6%;
+    
+}
+.content h5:hover{
+    font-size: 30px;
+    color: rgb(212, 125, 11) ;
+    transition: 0.8s;
+}
+.venue{
+    border: 2px solid white;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 20px rgb(124, 6, 164);
+}
+.speakers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    
+}
+.speaker{
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 270px;
+    text-align: center;
+    box-shadow: 15px 15px 15px  15px rgba(124, 6, 164, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.speaker:hover{
+    width: 320px;
+    box-shadow: 20px 20px 20px 20px rgb(213, 6, 220);
+    transition: 0.8s;
+}
+.Founder{
+    margin: 0;
+}
+.icon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.mivi{
+    background: white;
+    overflow: hidden;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mivi img{
+    width: 60px;
+    height: 60px;
+}
+#insta{
+    background-color: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 15px;
+}
+#linked{
+    width: 60px;
+    height: 60px;
+}
+#linkedin{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#mi{
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.guests{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+.guest{
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 270px;
+    text-align: center;
+    box-shadow: 15px 15px 15px  15px rgba(124, 6, 164, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.guest:hover{
+    width: 320px;
+    box-shadow: 20px 20px 20px 20px rgb(213, 6, 220);
+    transition: 0.8s;
+}
+.register{
+    width: 200px;
+    height: 50px;
+    margin: 200px 0 20px 45%;
+    font-size: 20px;
+    background-color:rgb(163, 17, 212);
+    box-shadow: 5px 5px 5px 10px rgba(124, 6, 164, 0.5);
+}
+.register:hover{
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 10px rgba(124, 6, 164, 1);
+    width: 170px;
+    height: 40px ;
+}
+.AboutUs{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(94, 52, 119);
+    color: white;
+}
+.AboutUs pre{
+    font-size: 20px;
+    
+}
