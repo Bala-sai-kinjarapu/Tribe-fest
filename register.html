@@ -11,18 +11,28 @@
             background-color: white;
         }
         .logo{
-    background-color:rgb(38, 3, 57);
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    position: fixed;
-    top: 10px;
-    left: 20px;
-}
+            background-color:rgb(38, 3, 57);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            position: fixed;
+            top: 10px;
+            left: 20px;
+        }
         .register{
             width: 60%;
-            
             margin-left: 20%;
+        }
+        .big{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        .small{
+            display: flex;
+            overflow: hidden;
+            justify-content: space-between;
         }
         .personal{
             width: 40%;
@@ -112,8 +122,10 @@
     <div class="logo" style="text-align: center; color: white;">logo</div>
     <a href="index.html"><button class="back"><b>Back</b></button></a>
 </div>
+    <div class="big">
     <fieldset class="register">
         <legend><strong>Register</strong></legend>
+        <div class="small">
         <fieldset class="personal"><br>
             <legend>Personal Info:</legend>
             <label for="firstname">First Name:</label><br>
@@ -132,9 +144,9 @@
             <label for="age">Age:</label><br>
             <input type="number" id="age" class="Box" placeholder="Age">
             </fieldset>
-
+            </div>
             <!-- educational info -->
-
+            <div class="small">
             <fieldset class="educational">
                 <legend><strong>Educational Info:</strong></legend>
                 <label for="collage">Collage:</label><br>
@@ -162,6 +174,8 @@
                     <option value="5th">5th year</option>
                 </select>
             </fieldset>
+            </div>
+            <div class="small">
             <fieldset class="contact">
                 <legend><strong>Contact Info</strong></legend>
                 <label for="email">Email:</label><br>
@@ -169,6 +183,7 @@
                 <label for="phone">Phone:</label><br>
                 <input type="number" id="phone" style="width: 250px;height: 25px;">
             </fieldset>
+            </div>
             <fieldset class="Event">
                 <legend><strong>Event specific Info:(Optional)</strong></legend>
                 <label for="" class="eventeliment">Do you want to perform in this event?</label><br><br>
@@ -183,5 +198,6 @@
             <label for="agree">I Agree the <a href="#" style="color: white;">Terms&conditions</a> of the organisation.</label><br><br>
             <button class="next"><b>Register</b></button>
     </fieldset>
+    </div>
 </body>
 </html>
